@@ -29,13 +29,8 @@ app.use((req, res, next) => {
 
 
 // Start Server
-const PORT = 4000; // or the port you actually want
-
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
 app.get('/',(req,res,next)=>{
-    res.render('index')
+  res.render('index')
 })
 app.get('/home',(req,res,next)=>{
     res.render('index')
@@ -45,7 +40,7 @@ app.get('/gallery',(req,res,next)=>{
 })
 app.get('/contact',(req,res,next)=>{
     res.render('contact')
-})
+  })
 app.get('/about',(req,res,next)=>{
     res.render('about')
 })
@@ -81,6 +76,8 @@ app.post('/contact', (req, res) => {
   });
 });
 
-app.listen(4000, () => {
-  console.log('Server running on http://localhost:4000');
-});
+  const PORT = 4000; // or the port you actually want
+  
+  app.listen(PORT, () => {
+      console.log(`Server running on port ${PORT}`);
+  });
