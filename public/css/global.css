@@ -1181,4 +1181,31 @@ padding-right:0;
    width:100%!important;
  }
 }
+@media (max-width: 767px) {
+  ul.timeline > li {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+  }
+
+  .timeline-panel {
+    width: 100% !important;
+    padding: 10px 0;
+  }
+
+  .timeline-panel img {
+    width: 100% !important;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .timeline-inverted .timeline-badge {
+    left: 50% !important;
+  }
+
+  .timeline .timeline-badge {
+    left: 50% !important;
+  }
+}
 
